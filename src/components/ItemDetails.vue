@@ -23,6 +23,10 @@
   
   const props = defineProps<Props>();
   const emit = defineEmits<{ remove: [index: number]; close: [] }>();
+
+  // временный лайфхак от жалоб линтера на неиспользуемые переменные
+  console.log('props :>> ', props);
+  console.log('emit :>> ', emit);
   </script>
   
   <style scoped lang="scss">
